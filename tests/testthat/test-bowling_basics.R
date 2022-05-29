@@ -1,6 +1,5 @@
 
-
-# Bowling Economy Rate ----------------------------------------------------
+# bowl_econ ----------------------------------------------------
 
 test_that("bowl_econ works", {
   expect_equal(bowl_econ(balls_bowled = 60, runs_conceded = 45), 4.5)
@@ -9,7 +8,7 @@ test_that("bowl_econ works", {
 })
 
 
-# Bowling Average ----------------------------------------------------
+# bowl_avg ----------------------------------------------------
 
 test_that("bowl_avg works", {
   expect_equal(bowl_avg(runs_conceded = 50, wickets_taken = 6) %>%
@@ -19,7 +18,7 @@ test_that("bowl_avg works", {
 })
 
 
-# Bowling Strike Rate -----------------------------------------------------
+# bowl_avg -----------------------------------------------------
 
 test_that("bowl_avg works", {
   expect_equal(bowl_sr(balls_bowled = 3830, wickets_taken = 112) %>%

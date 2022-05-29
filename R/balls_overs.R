@@ -14,7 +14,15 @@
 #' balls_to_overs(balls = 17)
 #'
 balls_to_overs <- function(balls) {
-  balls%/%6 + (balls%%6)/10
+
+  # get over number using integer division
+  over_no <- calc_int_div(value = balls, divisor = 6)
+
+  # get balls remaining in over using modulo
+  balls_no <- calc_mod(value = balls, divisor = 6)
+
+
+  over_no + (balls_no / 10)
 }
 
 
@@ -30,11 +38,24 @@ balls_to_overs <- function(balls) {
 #' @examples
 #' overs_to_balls(overs = 8.2)
 #' overs_to_balls(overs = 10)
-
+#'
 overs_to_balls <- function(overs) {
-  (overs%/%1)*6 + (overs%%1)*10
 
+  # get over number using integer division
+  over_no <- calc_int_div(value = overs, divisor = 1)
+
+  # get balls remaining in over using modulo
+  balls_no <- calc_mod(value = overs, divisor = 1)
+
+  if (balls_no > 0.6) {
+    mes <- paste(
+      "Oops... an over can only contain 6 legitimate balls. You supplied",
+      as.integer(balls_no * 10),
+      "balls which is impossible. Please check your input!"
+    )
+
+    rlang::abort(message = mes)
+  }
+
+  (over_no) * 6 + (balls_no) * 10
 }
-
-
-
