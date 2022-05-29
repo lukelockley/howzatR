@@ -18,4 +18,5 @@ Convert Overs (Six Ball) to Balls
 \examples{
 overs_to_balls(overs = 8.2)
 overs_to_balls(overs = 10)
+
 }
