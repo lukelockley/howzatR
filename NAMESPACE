@@ -2,5 +2,7 @@
 
 export("%>%")
 export(balls_to_overs)
+export(bat_avg)
+export(bat_sr)
 export(overs_to_balls)
 importFrom(magrittr,"%>%")
