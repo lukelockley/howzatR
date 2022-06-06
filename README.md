@@ -1,25 +1,25 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# cricket.functions
+# howzatR
 
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/cricket.functions)](https://CRAN.R-project.org/package=cricket.functions)
+status](https://www.r-pkg.org/badges/version/howzatR)](https://CRAN.R-project.org/package=howzatR)
 <!-- badges: end -->
 
-The goal of cricket.functions is to provide useful functions for cricket
+The goal of howzatR is to provide useful functions for cricket
 analysis & exploratory.
 
 ## Installation
 
-You can install the development version of cricket.functions from
+You can install the development version of howzatR from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("lukelockley/cricket.functions")
+devtools::install_github("lukelockley/howzatR")
 ```
 
 ## Example - Batters Analysis
@@ -27,7 +27,7 @@ devtools::install_github("lukelockley/cricket.functions")
 This is a basic example how to use the batting functionality:
 
 ``` r
-library(cricket.functions)
+library(howzatR)
 library(dplyr)
 #> 
 #> Attaching package: 'dplyr'
@@ -67,7 +67,7 @@ bat_df
 This is a basic example how to use the bowling functionality
 
 ``` r
-library(cricket.functions)
+library(howzatR)
 library(dplyr)
 
 ## Basic Bowling dataset

@@ -1,4 +1,4 @@
 library(testthat)
-library(cricket.functions)
+library(howzatR)
 
-test_check("cricket.functions")
+test_check("howzatR")
