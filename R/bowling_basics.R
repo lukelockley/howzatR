@@ -15,7 +15,7 @@
 #' @section Additional Information:
 #' Bowling economy rate is average number of runs scored per over bowled.
 #' A value of 9.5 indicates an average of 9.5 runs are scored per over bowled. The higher the number the more
-#' determental is for the bowler. Runs scored through byes & leg byes are \strong{excluded} from runs conceded by the bowler,
+#' detrimental is for the bowler. Runs scored through byes & leg byes are \strong{excluded} from runs conceded by the bowler,
 #' however wides and no-balls are \strong{included} in the bowler's figures.
 #' More info [here.](https://en.wikipedia.org/wiki/Economy_rate)
 #'
