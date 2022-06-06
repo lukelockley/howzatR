@@ -7,10 +7,10 @@
 overs_to_balls(overs)
 }
 \arguments{
-\item{overs}{number of six ball overs bowled/faced}
+\item{overs}{number of six ball overs bowled/faced.}
 }
 \value{
-number of six ball overs this equates too
+number of six ball overs this equates too.
 }
 \description{
 Convert Overs (Six Ball) to Balls

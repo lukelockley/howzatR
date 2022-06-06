@@ -7,17 +7,26 @@
 bowl_econ(balls_bowled, runs_conceded)
 }
 \arguments{
-\item{balls_bowled}{number of balls bowled. Data in terms of six ball overs
+\item{balls_bowled}{number of balls bowled. Data in terms of six ball overs.
 please convert to \code{\link{overs_to_balls}} to get it terms of \verb{balls bowled}}
 
-\item{runs_conceded}{total runs conceded by bowler across the overs bowled}
+\item{runs_conceded}{total runs conceded by bowler across the overs bowled.}
 }
 \value{
-Economy Rate across the number of overs bowled
+Economy rate across the number of overs bowled.
 }
 \description{
-Calculates bowlers' economy rate over six ball overs
+Calculates bowlers' economy rate over six ball overs.
 }
+\section{Additional Information}{
+
+Bowling economy rate is average number of runs scored per over bowled.
+A value of 9.5 indicates an average of 9.5 runs are scored per over bowled. The higher the number the more
+determental is for the bowler. Runs scored through byes & leg byes are \strong{excluded} from runs conceded by the bowler,
+however wides and no-balls are \strong{included} in the bowler's figures.
+More info \href{https://en.wikipedia.org/wiki/Economy_rate}{here.}
+}
+
 \examples{
 bowl_econ(balls_bowled = 60, runs_conceded = 45)
 bowl_econ(

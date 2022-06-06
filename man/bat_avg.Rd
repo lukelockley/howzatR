@@ -12,11 +12,19 @@ bat_avg(runs_scored, no_dismissals)
 \item{no_dismissals}{A singular value of the number of times a batters has been dismissed within those innings.}
 }
 \value{
-A singular value showing the Batter's average.
+A singular value showing the batter's average.
 }
 \description{
-Calculates a Batter's average over a number of innings.
+Calculates a batter's average over a number of innings.
 }
+\section{Additional Information}{
+
+A batting average is the number of runs divided by the number of times a batters is dismissed.
+Batters who remain \strong{not out} at the end of an innings \strong{don't} have that innings
+count towards the number of dismissals. The higher average typically indicates a higher quality player.
+More info \href{https://en.wikipedia.org/wiki/Batting_average_(cricket)}{here.}
+}
+
 \examples{
 bat_avg(runs_scored = 568, no_dismissals = 9)
 total_runs <- sum(c(45, 123, 56, 12, 192, 34, 78, 3, 25))

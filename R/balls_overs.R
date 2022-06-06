@@ -2,11 +2,11 @@
 
 #' Convert Balls to Overs (Six Ball)
 #'
-#' Convert numbers of balls as it equates in terms of six ball overs
+#' Convert numbers of balls as it equates in terms of six ball overs.
 #'
 #' @param balls number of balls bowled/faced.
 #'
-#' @return number of six ball overs this equates too
+#' @return number of six ball overs this equates too.
 #' @export
 #'
 #' @examples
@@ -30,9 +30,9 @@ balls_to_overs <- function(balls) {
 
 #' Convert Overs (Six Ball) to Balls
 #'
-#' @param overs number of six ball overs bowled/faced
+#' @param overs number of six ball overs bowled/faced.
 #'
-#' @return number of six ball overs this equates too
+#' @return number of six ball overs this equates too.
 #' @export
 #'
 #' @examples

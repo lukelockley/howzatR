@@ -7,17 +7,25 @@
 bowl_sr(balls_bowled, wickets_taken)
 }
 \arguments{
-\item{balls_bowled}{number of balls bowled. Data in terms of six ball overs
+\item{balls_bowled}{number of balls bowled. Data in terms of six ball overs.
 please convert to \code{\link{overs_to_balls}} to get it terms of \verb{balls bowled}}
 
-\item{wickets_taken}{total wickets taken across the overs bowled}
+\item{wickets_taken}{total wickets taken across the overs bowled.}
 }
 \value{
-Number of balls per wicket taken across overs bowled
+Number of balls per wicket taken across overs bowled.
 }
 \description{
-Calculates Bowlers' number of balls per wicket taken across overs bowled
+Calculates bowlers' number of balls per wicket taken across overs bowled.
 }
+\section{Additional Information}{
+
+A bowling strike rate is defined as the number of legal balls per wicket taken.
+For example a value of 20 indicates 20 balls bowled are scored per wicket. This the reverse of
+\code{\link{bat_sr}} where the lower the number the better.
+More info \href{https://en.wikipedia.org/wiki/Strike_rate#Bowling_strike_rate}{here.}
+}
+
 \examples{
 bowl_sr(balls_bowled = 3830, wickets_taken = 112)
 bowl_sr(balls_bowled = overs_to_balls(overs = 1651.2), wickets_taken = 243)
