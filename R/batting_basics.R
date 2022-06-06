@@ -2,13 +2,19 @@
 
 #' Batters Average
 #'
-#' Calculates a Batter's average over a number of innings.
+#' Calculates a batter's average over a number of innings.
 #'
 #' @param runs_scored A singular value of the runs scored by a batter.
 #' @param no_dismissals A singular value of the number of times a batters has been dismissed within those innings.
 #'
-#' @return A singular value showing the Batter's average.
+#' @return A singular value showing the batter's average.
 #' @export
+#'
+#' @section Additional Information:
+#' A batting average is the number of runs divided by the number of times a batters is dismissed.
+#' Batters who remain \strong{not out} at the end of an innings \strong{don't} have that innings
+#' count towards the number of dismissals. The higher average typically indicates a higher quality player.
+#' More info [here.](https://en.wikipedia.org/wiki/Batting_average_(cricket))
 #'
 #' @examples
 #' bat_avg(runs_scored = 568, no_dismissals = 9)
@@ -23,13 +29,21 @@ bat_avg <- function(runs_scored, no_dismissals) {
 
 #' Batters Strike Rate
 #'
-#' Calculates a Batter's Strike Rate over a number of innings.
+#' Calculates a batter's strike rate over a number of innings.
 #'
 #' @param runs_scored A singular value of the runs scored by a batter.
 #' @param balls_faced A singular value of balls faced by a batter.
 #'                    Overs can be converted into `balls_faced` using \code{\link{overs_to_balls}}
 #'
-#' @return A singular value showing the Batter's Strike Rate per 100 Balls
+#' @return A singular value showing the batter's strike rate per 100 Balls.
+#'
+#' @section Additional Information:
+#' A batting strike rate is the average number of runs scored per 100 balls.
+#' For example, a strike rate of 135 implies a batter would score 135 runs in a 100 balls.
+#' A higher number indicates the batter scores at faster rate.
+#' More info [here.](https://en.wikipedia.org/wiki/Strike_rate#Batting_strike_rate)
+#'
+#'
 #' @export
 #'
 #' @examples

@@ -13,11 +13,19 @@ bat_sr(runs_scored, balls_faced)
 Overs can be converted into \code{balls_faced} using \code{\link{overs_to_balls}}}
 }
 \value{
-A singular value showing the Batter's Strike Rate per 100 Balls
+A singular value showing the batter's strike rate per 100 Balls.
 }
 \description{
-Calculates a Batter's Strike Rate over a number of innings.
+Calculates a batter's strike rate over a number of innings.
 }
+\section{Additional Information}{
+
+A batting strike rate is the average number of runs scored per 100 balls.
+For example, a strike rate of 135 implies a batter would score 135 runs in a 100 balls.
+A higher number indicates the batter scores at faster rate.
+More info \href{https://en.wikipedia.org/wiki/Strike_rate#Batting_strike_rate}{here.}
+}
+
 \examples{
 bat_sr(runs_scored = 568, balls_faced = 600)
 total_runs <- sum(c(45, 123, 56, 12, 192, 34, 78, 3, 25))

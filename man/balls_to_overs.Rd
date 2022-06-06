@@ -10,10 +10,10 @@ balls_to_overs(balls)
 \item{balls}{number of balls bowled/faced.}
 }
 \value{
-number of six ball overs this equates too
+number of six ball overs this equates too.
 }
 \description{
-Convert numbers of balls as it equates in terms of six ball overs
+Convert numbers of balls as it equates in terms of six ball overs.
 }
 \examples{
 balls_to_overs(balls = 6)

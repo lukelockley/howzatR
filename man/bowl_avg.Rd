@@ -7,16 +7,23 @@
 bowl_avg(runs_conceded, wickets_taken)
 }
 \arguments{
-\item{runs_conceded}{total runs conceded by bowler across the overs bowled}
+\item{runs_conceded}{total runs conceded by bowler across the overs bowled.}
 
-\item{wickets_taken}{total wickets taken across the overs bowled}
+\item{wickets_taken}{total wickets taken across the overs bowled.}
 }
 \value{
-Average number of runs per wicket taken across overs bowled
+Average number of runs per wicket taken across overs bowled.
 }
 \description{
-Calculates Bowlers' Average number of runs per wicket taken across overs bowled
+Calculates bowlers' average number of runs per wicket taken across overs bowled.
 }
+\section{Additional Information}{
+
+A bowling average is the average number of runs conceded for wicket taken. A value of 15 indicates an average of
+15 runs were conceded per wicket taken. The lower the value, the better the average; the reserve of \code{\link{bat_avg}}
+More info \href{https://en.wikipedia.org/wiki/Bowling_average}{here.}
+}
+
 \examples{
 bowl_avg(runs_conceded = 50, wickets_taken = 6)
 bowl_avg(runs_conceded = 341, wickets_taken = 13)
