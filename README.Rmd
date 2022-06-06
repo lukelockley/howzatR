@@ -1,0 +1,84 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# cricket.functions
+
+<!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/cricket.functions)](https://CRAN.R-project.org/package=cricket.functions)
+<!-- badges: end -->
+
+The goal of cricket.functions is to provide useful functions for cricket analysis & exploratory.
+
+## Installation
+
+You can install the development version of cricket.functions from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("lukelockley/cricket.functions")
+```
+
+## Example - Batters Analysis
+
+This is a basic example how to use the batting functionality:
+
+```{r example - batters analysis}
+library(cricket.functions)
+library(dplyr)
+
+## Basic Batting dataset
+bat_raw_df
+
+
+## Analysis
+bat_df <- bat_raw_df %>%
+  mutate(
+    Outs = Inns - NO,
+    Average = bat_avg(runs_scored = Runs_Scored, no_dismissals = Outs),
+    Strike_Rate = bat_sr(runs_scored = Runs_Scored, balls_faced = Balls_Faced)
+  )
+
+## Results
+bat_df
+```
+
+## Example - Bowling Analysis
+
+This is a basic example how to use the bowling functionality
+
+```{r example - bowling analysis}
+library(cricket.functions)
+library(dplyr)
+
+## Basic Bowling dataset
+bowl_raw_df
+
+
+## Analysis
+bowl_df <- bowl_raw_df %>%
+  mutate(
+    Economy = bowl_econ(balls_bowled = Balls_Bowled, runs_conceded = Runs_Conceded),
+    Average = bowl_avg(runs_conceded = Runs_Conceded, wickets_taken = Wickets),
+    Strike_Rate = bowl_sr(balls_bowled = Balls_Bowled, wickets_taken = Wickets),
+    Overs = balls_to_overs(balls = Balls_Bowled)
+  ) %>%
+  select(
+    Player, Balls_Bowled, Overs, Runs_Conceded,
+    Wickets, Economy, Average, Strike_Rate
+  )
+
+## Results
+bowl_df
+```
