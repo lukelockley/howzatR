@@ -1,5 +1,5 @@
-## R CMD check results
+## Resubmission
 
-0 errors | 0 warnings | 1 note
+This is a resubmission. In this version I have:
 
-* This is a new release.
+* Edit the DESCRIPTION to remove any reference to "This package", package name, title or similar in the description.

@@ -4,8 +4,7 @@ Version: 1.0.0
 Authors@R: 
     person("Luke", "Lockley", , "luke.lockley@btinternet.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7028-1499"))
-Description: Useful Functions for Cricket Analysis. This package will help
-    you do calculations specific to cricket in a tidy & simple manner.
+Description: Helping to calculate cricket specific problems in a tidy & simple manner.
 License: MIT + file LICENSE
 Imports: 
     magrittr,
