@@ -6,7 +6,7 @@
 \alias{howzatR-package}
 \title{howzatR: Useful Functions for Cricket Analysis}
 \description{
-Useful Functions for Cricket Analysis. This package will help you do calculations specific to cricket in a tidy & simple manner.
+Helping to calculate cricket specific problems in a tidy & simple manner.
 }
 \author{
 \strong{Maintainer}: Luke Lockley \email{luke.lockley@btinternet.com} (\href{https://orcid.org/0000-0002-7028-1499}{ORCID})
