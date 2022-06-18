@@ -9,10 +9,16 @@
 status](https://www.r-pkg.org/badges/version/howzatR)](https://CRAN.R-project.org/package=howzatR)
 <!-- badges: end -->
 
-The goal of howzatR is to provide useful functions for cricket
-analysis & exploratory.
+The goal of howzatR is to provide useful functions for cricket analysis
+& exploratory.
 
 ## Installation
+
+You can install a stable version of howzatR using R/Rstudio with:
+
+``` r
+install.packages("howzatR")
+```
 
 You can install the development version of howzatR from
 [GitHub](https://github.com/) with:

@@ -1,6 +1,7 @@
 # howzatR (development version)
 
-* TBC
+* Update package `DESCRIPTION` with `URL` and `BugReports` entries
+* Add how to install stable version of howzatR in `README` 
 
 # howzatR 1.0.0
 
