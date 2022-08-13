@@ -8,6 +8,14 @@
 \description{
 Helping to calculate cricket specific problems in a tidy & simple manner.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/lukelockley/howzatR}
+  \item Report bugs at \url{https://github.com/lukelockley/howzatR/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Luke Lockley \email{luke.lockley@btinternet.com} (\href{https://orcid.org/0000-0002-7028-1499}{ORCID})
 
