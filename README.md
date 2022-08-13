@@ -87,24 +87,27 @@ bowl_raw_df
 ## Analysis
 bowl_df <- bowl_raw_df %>%
   mutate(
-    Economy = bowl_econ(balls_bowled = Balls_Bowled, runs_conceded = Runs_Conceded),
+    Economy_overs = bowl_econ(balls_bowled = Balls_Bowled, runs_conceded = Runs_Conceded, type = "overs"),
+    Economy_sets = bowl_econ(balls_bowled = Balls_Bowled, runs_conceded = Runs_Conceded, type = "sets"),
+    Economy_hundred = bowl_econ(balls_bowled = Balls_Bowled, runs_conceded = Runs_Conceded, type = "per_100"),
     Average = bowl_avg(runs_conceded = Runs_Conceded, wickets_taken = Wickets),
     Strike_Rate = bowl_sr(balls_bowled = Balls_Bowled, wickets_taken = Wickets),
     Overs = balls_to_overs(balls = Balls_Bowled)
   ) %>%
   select(
     Player, Balls_Bowled, Overs, Runs_Conceded,
-    Wickets, Economy, Average, Strike_Rate
+    Wickets, Economy_overs, Economy_sets, Economy_hundred,
+    Average, Strike_Rate
   )
 
 ## Results
 bowl_df
-#>     Player Balls_Bowled Overs Runs_Conceded Wickets  Economy  Average
-#> 1 E. Apple          560  93.2           235      15 2.517857 15.66667
-#> 2  F. Pear          754 125.4           567      21 4.511936 27.00000
-#> 3 G. Grape          234  39.0           270       7 6.923077 38.57143
-#>   Strike_Rate
-#> 1    37.33333
-#> 2    35.90476
-#> 3    33.42857
+#>     Player Balls_Bowled Overs Runs_Conceded Wickets Economy_overs Economy_sets
+#> 1 E. Apple          560  93.2           235      15      2.517857     2.098214
+#> 2  F. Pear          754 125.4           567      21      4.511936     3.759947
+#> 3 G. Grape          234  39.0           270       7      6.923077     5.769231
+#>   Economy_hundred  Average Strike_Rate
+#> 1        41.96429 15.66667    37.33333
+#> 2        75.19894 27.00000    35.90476
+#> 3       115.38462 38.57143    33.42857
 ```
