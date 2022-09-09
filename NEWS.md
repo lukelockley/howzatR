@@ -1,4 +1,4 @@
-# howzatR (development version)
+# howzatR 1.0.1
 
 * Update package `DESCRIPTION` with `URL` and `BugReports` entries
 * Add how to install stable version of howzatR in `README` 
