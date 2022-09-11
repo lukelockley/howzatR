@@ -1,6 +1,6 @@
 Package: howzatR
 Title: Useful Functions for Cricket Analysis
-Version: 1.0.1
+Version: 1.0.1.9000
 Authors@R: 
     person("Luke", "Lockley", , "luke.lockley@btinternet.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7028-1499"))
