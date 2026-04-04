@@ -12,6 +12,7 @@
 
 0 errors ✔ | 0 warnings ✔ | 1 note ✖
 
+This update fixes the issue
 ## revdepcheck results
 
 We checked 0 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.
